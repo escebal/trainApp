@@ -22,7 +22,7 @@ const LogIn = ({navigation}) => {
         </View>
       </View>
       <View style={styles.footerContainer}>
-        <Button title="Ingresar" buttonColor="#FF8303" />
+        <Button title="Ingresar" buttonColor="#FF8303" onPress={() => navigation.navigate('Homi')} />
         <Text>o</Text>
         <View style={styles.mediaContainer}>
           <TouchableOpacity style={styles.mediaButton}>

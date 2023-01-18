@@ -6,11 +6,11 @@ const ClientCard = () => {
   return (
     <View style={styles.clientCardContainer} >
         <View>
-            <Text>Aca va una imagen</Text>
+            <View style={styles.imageView} ></View>
         </View>
-        <View>
-            <Text>Nombre de la persona</Text>
-            <Text>No se que poner aca</Text>
+        <View style={styles.dataContainer} >
+            <Text style={styles.nameText} >Nombre de la persona</Text>
+            <Text style={styles.descriptionText} >No se que poner aca</Text>
         </View>
     </View>
   )

@@ -1,8 +1,13 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-    clientsListContainer: {
-    backgroundColor: "#754"
+  clientsListContainer: {
+    flex: 1
+  },
+  addClientContainer: {
+    position:'absolute',
+    right: 30,
+    bottom: 30,
   },
 });
 
