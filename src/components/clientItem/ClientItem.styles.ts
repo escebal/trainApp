@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   clientCardContainer: {
     backgroundColor: '#eee',
     flexDirection: 'row',
-    margin: 20,
+    marginHorizontal: 20,
     padding: 30,
     borderRadius: 20
   },

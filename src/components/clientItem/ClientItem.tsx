@@ -1,11 +1,11 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import styles from './ClientItem.styles';
 
-const ClientItem = ({item}) => {
+const ClientItem = ({item, navigation}) => {
   const {id, name, description} = item
   return (
-    <View style={styles.clientCardContainer}>
+    <TouchableOpacity style={styles.clientCardContainer} onPress={() => navigation.navigate('Perfil')} >
       <View>
         <View style={styles.imageView}></View>
       </View>
@@ -13,7 +13,7 @@ const ClientItem = ({item}) => {
         <Text style={styles.nameText}>{name}</Text>
         <Text style={styles.descriptionText}>{description}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

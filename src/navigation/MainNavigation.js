@@ -8,6 +8,7 @@ import Tabs from './Tabs';
 import AddClient from '../screens/addClient/AddClient';
 import Home from '../screens/home/Home';
 import {SafeAreaProvider, SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
+import ClientProfile from '../screens/clientProfile/ClientProfile';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,7 @@ const MainNavigation = () => {
           <Stack.Screen name="Homi" component={Tabs} />
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="ClientForm" component={AddClient} />
+          <Stack.Screen name="Perfil" component={ClientProfile} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
